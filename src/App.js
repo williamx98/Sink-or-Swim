@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 import './App.css';
 
 var Parse = require('parse/node');
 
+const Index = () => <h2>Home</h2>;
+const About = () => <h2>About</h2>;
+const Users = () => <h2>Users</h2>;
 
 
 class App extends Component {
+  initializeParse() {
+    Parse.initialize("moodyhack2018", "myMasterKey");
+    Parse.serverURL = "https://moodyhack2018.herokuapp.com/parse";
+  }
+
   async makeUser(username, password) {
     var user = new Parse.User();
     user.set("username", username);
@@ -31,9 +41,8 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    Parse.initialize("moodyhack2018", "myMasterKey");
-    Parse.serverURL = "https://moodyhack2018.herokuapp.com/parse";
-    this.logIn("asdf","asdf");
+    this.initializeParse();
+    this.logIn("username","password");
   }
 
   componentDidMount() {
@@ -42,7 +51,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      /*<div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -57,7 +66,29 @@ class App extends Component {
             Learn React
           </a>
         </header>
-      </div>
+      </div>*/
+      <Router>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about/">About</Link>
+              </li>
+              <li>
+                <Link to="/users/">Users</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Route path="/" exact component={Index} />
+          <Route path="/about/" component={About} />
+          <Route path="/users/" component={Users} />
+        </div>
+      </Router>
+
     );
   }
 }
