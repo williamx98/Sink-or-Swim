@@ -1,6 +1,6 @@
-#moodyhack2018
+# moodyhack2018
 
-###Requirements:
+### Requirements:
 need `Node.js` installed and access to `npm`
 
 ### Setup instructions:  
