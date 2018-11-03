@@ -1,3 +1,22 @@
+#moodyhack2018
+
+###Requirements:
+need `Node.js` installed and access to `npm`
+
+### Setup instructions:  
+1. Clone this repo:  
+`git clone https://github.com/willthexu/moodyhack2018.git`
+2. Install dependencies:  
+`npm install`
+
+### Run instructions:  
+1. Start localhost server:  
+`npm start`  
+2. Visit localhost address:  
+localhost address should be: `http://localhost:3000`
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
