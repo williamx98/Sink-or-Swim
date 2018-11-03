@@ -16,6 +16,7 @@ need `Node.js` installed and access to `npm`
 localhost address should be: `http://localhost:3000`
 
 
+## Default useful stuff. Don't need to read guys.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
