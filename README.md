@@ -9,7 +9,7 @@ A candidate with high positive reviews will be "swimming" (indicated by a life p
 
 Reviews come from both verified journalist and anonyous users and their scores for a certain candidate are calculated sperately.
 
-### What was this made with
+### What it's made of
 React.js
 Heroku + Parse
 
