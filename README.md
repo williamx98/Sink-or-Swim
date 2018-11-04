@@ -1,7 +1,8 @@
 # A hackathon project for MoodyHack 2018, UT's first journalism hackathon!
 
 Problem: Voters often listen to just their favorite news source for election information.   
-Goal: To efficiently inform voters through a comprehensive yet simple approach.
+Goal: To efficiently inform voters through a comprehensive yet simple approach.  
+Solution: Create a familiar platform with focus on political news - Rotten Tomatoes for politics
 
 ### How it works
 A candidate with high positive reviews will be "swimming" (indicated by a life preserver icon), otherwise, they will be "sinking" (indicated by an anchor image).
