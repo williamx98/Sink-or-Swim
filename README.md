@@ -1,6 +1,6 @@
 # A hackathon project for MoodyHack 2018, UT's first journalism hackathon!
 
-Problem: Voters often listen to just their favorite news source for election information. 
+Problem: Voters often listen to just their favorite news source for election information.   
 Goal: To efficiently inform voters through a comprehensive yet simple approach.
 
 ### How it works
