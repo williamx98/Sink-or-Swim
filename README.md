@@ -1,7 +1,9 @@
 # A hackathon project for MoodyHack 2018, UT's first journalism hackathon!
 
 Problem: Voters often listen to just their favorite news source for election information.   
+
 Goal: To efficiently inform voters through a comprehensive yet simple approach.  
+
 Solution: Create a familiar platform with focus on political news - Rotten Tomatoes for politics
 
 ### How it works
@@ -10,7 +12,7 @@ A candidate with high positive reviews will be "swimming" (indicated by a life p
 Reviews come from both verified journalist and anonyous users and their scores for a certain candidate are calculated sperately.
 
 ### What it's made of
-React.js
+React.js  
 Heroku + Parse
 
 Most of this project was made with React.js for the front-end. The back-end is provided through a custom NoSQL backend using Parse installed to Heroku. There is the ability to log-in as well as pull data on an existing candidate. 
