@@ -1,5 +1,8 @@
 # moodyhack2018
 
+Demo:
+![](https://github.com/willthexu/moodyhack2018/blob/master/demo.gif)
+
 ### Requirements:
 need `Node.js` installed and access to `npm`
 
@@ -12,7 +15,7 @@ need `Node.js` installed and access to `npm`
 ### Run instructions:  
 1. Start localhost server:  
 `npm start`  
-2. Visit localhost address:  
+2. Visit localhost address (you should be automatically redirected to localhost when running `npm start`:  
 localhost address should be: `http://localhost:3000`
 
 
