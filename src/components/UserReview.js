@@ -19,7 +19,7 @@ class UserReview extends Component {
                 <Grid container>
                     <Grid item xs>
                         <h1 style={{ color: '#cccccc' }}> VOTERS </h1>
-                        <h1> 83% </h1>
+                        <h1> 61% </h1>
                     </Grid>
                     <Grid item xs>
                         <img style={styles.life} src="X_Mark.svg" />

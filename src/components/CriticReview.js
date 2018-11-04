@@ -26,7 +26,7 @@ class CriticReview extends Component {
                         <Grid container>
                             <Grid item xs>
                                 <h1 style={{color: 'white'}}> MEDIA </h1>
-                                <h1> 63% </h1> 
+                                <h1> 67% </h1> 
                             </Grid>
                             <Grid item xs>
                                 <img style={styles.life} src="LifeSaver_White.svg" />

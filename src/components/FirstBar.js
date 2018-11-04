@@ -22,7 +22,7 @@ class FirstBar extends Component {
         return (
             <Grid style={styles.height} container>
                 <Grid item xs={12} sm={12} md={3}>
-                    <img style={styles.pic} src="1024px-Beto_O'Rourke,_Official_portrait,_113th_Congress.jpg" alt ="pic" />
+                    <img style={styles.pic} src="greg.png" alt ="pic" />
                 </Grid>
                 <Grid item xs={12} sm={12} md={8}>
                     <Review />

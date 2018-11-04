@@ -37,11 +37,11 @@ class SecondBar extends Component {
         return (
             <Grid container>
                 <Grid item xs={12} sm={12} md={2}>
-                    <h4> Running for Senator</h4>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum repudiandae laborum, error ipsa impedit possimus. Rerum, mollitia quasi.</p>
+                    <h4> Running for Governor</h4>
+                    <p> Columnists point to Gov. Greg Abbot's relative vision and the continued success of the Texas economy as positives for his campaign. Criticisms included his support for Lt. Gov. Dan Patrick's legislative agenda and a lack of viable challengers. </p>
                 </Grid>
                 <Grid item xs style={styles.space}>
-                    <img style={styles.pic} src="1024px-Beto_O'Rourke,_Official_portrait,_113th_Congress.jpg" alt="pic" />
+                    <img style={styles.pic} src="bevo.png" alt="pic" />
                 </Grid>
                 <Grid item style={styles.topMargin} md={6}>
 

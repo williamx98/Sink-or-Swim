@@ -18,10 +18,10 @@ class Review extends Component {
             <div style={styles.media}>
                 <Grid container spacing={24}>
                     <Grid item xs={8}>
-                        <h1>Beto O'Rourke</h1>
+                        <h1>Greg Abbott</h1>
                     </Grid>
                     <Grid item xs={4}>
-                        <h2>D, El Paso</h2>
+                        <h2>R-Texas</h2>
                     </Grid>
                 </Grid>
 
