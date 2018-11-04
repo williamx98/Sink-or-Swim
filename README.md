@@ -1,6 +1,21 @@
-# moodyhack2018
+# A hackathon project for MoodyHack 2018, UT's first journalism hackathon!
 
-Demo:
+Problem: Voters often listen to just their favorite news source for election information. 
+Goal: To efficiently inform voters through a comprehensive yet simple approach.
+
+### How it works
+A candidate with high positive reviews will be "swimming" (indicated by a life preserver icon), otherwise, they will be "sinking" (indicated by an anchor image).
+
+Reviews come from both verified journalist and anonyous users and their scores for a certain candidate are calculated sperately.
+
+### What was this made with
+React.js
+Heroku + Parse
+
+Most of this project was made with React.js for the front-end. The back-end is provided through a custom NoSQL backend using Parse installed to Heroku. There is the ability to log-in as well as pull data on an existing candidate. 
+
+
+### Demo:
 ![](https://github.com/willthexu/moodyhack2018/blob/master/demo.gif)
 
 ### Requirements:
