@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
+import "../App.css";
 
 const styles = {
     media: {
@@ -61,26 +62,26 @@ class ThirdBar extends Component {
         return (
             <Grid container style={{ width: '100%' }}>
                 <Grid item md={2}>
-                    <h4> NEWS </h4>
-                    <p>
-                        Texas Tribune
+                    <h4 class="newsTitle"> NEWS </h4>
+                    <p class="newsSource">
+                        <span style={{backgroundColor: '#eee'}}>Texas Tribune</span>
                         <br />
                         <a style={styles.headlines} href="https://www.texastribune.org/2018/11/01/texas-gov-greg-abbott-has-pitched-plan-fix-school-finance/"> Behind closed doors, Greg Abbott’s office has pitched a plan to fix Texas school finance </a>
                     </p>
-                    <p>
-                        San Antonio Express-News
+                    <p class="newsSource">
+                        <span style={{backgroundColor: '#eee'}}>San Antonio Express-News</span>
                         <br/>
                         <a style={styles.headlines} href="https://www.expressnews.com/news/politics/texas_legislature/article/Gov-Greg-Abbott-pushes-for-limit-on-school-13358780.php"> Gov. Greg Abbott pushes for limit on school property tax hikes
                         </a>
                     </p>
-                    <p>
-                        Dallas Morning News
+                    <p class="newsSource">
+                        <span style={{backgroundColor: '#eee'}}>Dallas Morning News</span>
                         <br />
                         <a style={styles.headlines} href="https://www.dallasnews.com/news/2018-elections/2018/11/03/election-day-sprint-gov-greg-abbott-lupe-valdez-texas-candidates"> Election Day sprint: What are Gov. Greg Abbott, Lupe Valdez and other Texas candidates up to? </a>
 
                     </p>
-                    <p>
-                        KFox14
+                    <p class="newsSource">
+                        <span style={{backgroundColor: '#eee'}}>KFox14</span>
                         <br />
                         <a style={styles.headlines} href="https://kfoxtv.com/news/election/gov-greg-abbott-will-hurd-speak-to-supporters-in-el-paso-ahead-of-elections"> Gov. Greg Abbott, Will Hurd speak to supporters in El Paso ahead of elections
                         </a>
@@ -90,23 +91,23 @@ class ThirdBar extends Component {
                     <Grid item style={styles.media1}>
                         <h1 style={styles.textPad}> MEDIA </h1>
                     </Grid>
-                    <Grid item>
+                    <Grid item class="reviewTitle">
                         <h1> Dallas Morning News Editorial </h1>
                         <Grid container>
                             <Grid item xs={2}>
-                                <img style={{ width: '100px' }} src="LifeSaver_Black.svg" />
+                                <img style={{ width: '100px', transform: 'translate(5px, 10px)' }} src="LifeSaver_Black.svg" />
                             </Grid>
                             <Grid item xs={8}>
-                                <p style={{ width: '100%' }}>The case for returning Republican Greg Abbott to office can be simply made. He is the governor of a state with a thriving economy and that is succeeding at attracting businesses and new residents at an astounding clip. And in times of crisis, Abbott has provided the level-headed leadership needed. His governing philosophy is more in tune with the political values of most Texans, and his fondness for low taxes and free enterprise will help keep the economy humming. He is the better candidate.</p>
+                                <p style={{ width: '100%'}}>The case for returning Republican Greg Abbott to office can be simply made. He is the governor of a state with a thriving economy and that is succeeding at attracting businesses and new residents at an astounding clip. And in times of crisis, Abbott has provided the level-headed leadership needed. His governing philosophy is more in tune with the political values of most Texans, and his fondness for low taxes and free enterprise will help keep the economy humming. He is the better candidate.</p>
                                 <a style={styles.links} href="https://www.dallasnews.com/opinion/editorials/2018/10/18/we-recommend-greg-abbott-for-governor-1"> View Full Editorial </a>
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item>
+                    <Grid item class="reviewTitle">
                         <h1> Austin Chronicle </h1>
                         <Grid container>
                             <Grid item xs={2}>
-                                <img style={{ width: '100px' }} src="Anchor_Black.svg" />
+                                <img style={{ width: '100px', transform: 'translate(5px, 10px)'}} src="Anchor_Black.svg" />
                             </Grid>
                             <Grid item xs={8}>
                                 <p style={{ width: '100%' }}>What, you expected us to endorse a Republican in 2018? </p>
@@ -114,11 +115,11 @@ class ThirdBar extends Component {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item>
+                    <Grid item class="reviewTitle">
                         <h1> Houston Chronicle </h1>
                         <Grid container>
                             <Grid item xs={2}>
-                                <img style={{ width: '100px' }} src="LifeSaver_Black.svg" />
+                                <img style={{ width: '100px', transform: 'translate(5px, 10px)'}} src="LifeSaver_Black.svg" />
                             </Grid>
                             <Grid item xs={8}>
                                 <p style={{ width: '100%' }}> This gubernatorial race, if we can call it that, between Republican Gov. Greg Abbott and former Dallas County Sheriff Lupe Valdez has left Texas voters with a hard choice. In the absence a better option, we endorse the incumbent — though not the status quo. </p>

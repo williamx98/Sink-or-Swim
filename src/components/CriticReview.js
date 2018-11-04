@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
+import '../App.css';
 
 const styles = {
     media: {
         backgroundColor: '#cccccc',
-        height: '48%',
+        height: '43.25%',
         padding: '20px'
     },
     water: {
-       height: '50%',
-       paddingTop: 32,
-       width: '30%,'
+       height: '70%',
+       transform: 'translateY(-74px)'
    },
    life: {
        width: '90%',
@@ -26,7 +26,7 @@ class CriticReview extends Component {
                         <Grid container>
                             <Grid item xs>
                                 <h1 style={{color: 'white'}}> MEDIA </h1>
-                                <h1> 67% </h1> 
+                                <h1 class="reviewVal">67%</h1> 
                             </Grid>
                             <Grid item xs>
                                 <img style={styles.life} src="LifeSaver_White.svg" />
@@ -35,7 +35,7 @@ class CriticReview extends Component {
                     </div>
                 </Grid>
                 <Grid item xs>
-                    <img style={styles.water} src="WaterLevel.svg" />
+                    <img style={styles.water} src="logo.svg" />
                 </Grid>
             </Grid>
         )

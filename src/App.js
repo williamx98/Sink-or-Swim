@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import './App.css';
 import Candidate from './components/Candidate.js'
+import logo from "./logo.svg"
+import navbar from "./navbar.png"
+import homeImg from "./home.png"
+import './App.css';
 
 var Parse = require('parse/node');
-
-const CandidatePage = () => <CandidatePage/>;
-const Users = () => <h2>Topics</h2>;
-const Index = () => (
-  <ul>
-    <li>
-      <Link to="/">Home</Link>
-    </li>
-    <li>
-      {/* Change this link to set query string*/}
-      <Link to="/candidate?id=1234">Candidate ID: 1234</Link>
-    </li>
-  </ul>
-);
+const candidateQuery = Parse.Object.extend("Candidate");
 
 class App extends Component {
   initializeParse() {
@@ -47,9 +38,35 @@ class App extends Component {
     }
   }
 
+  handleCandidateSearchChange(event) {
+    this.setState({searchCandidate: event.target.value});
+  }
+
+  async handleSearchSubmit(event) {
+    console.log(this.state.searchCandidate)
+    event.preventDefault();
+
+    var query = new Parse.Query(candidateQuery)
+    query.equalTo("first_name", this.state.searchCandidate);
+    const results = await query.find();
+    var id = "";
+    if (results.length !== 0) {
+      id = results[0].id
+    }
+
+    window.location.href = "/candidate?id=" + id;
+  }
+
   constructor(props) {
     super(props);
     this.initializeParse();
+
+    this.handleSearchSubmit = this.handleSearchSubmit.bind(this);
+    this.handleCandidateSearchChange = this.handleCandidateSearchChange.bind(this);
+
+    this.state = {searchCandidate: ""}
+
+    this.logIn("username", "password")
   }
 
   componentDidMount() {
@@ -59,10 +76,27 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div>
-          <Route exact path="/" component={Index} />
-          <Route exact path="/candidate" component={Candidate} />
-          <Route exact path="/topics" component={Users} />
+        <div class="container">
+          <Switch>
+              <Route exact={true} path="/">
+                <div class="App-header">
+                  <div>
+                    <img src={logo} class="App-logo"/>
+                    <div class="searchbar">
+                      <ul>
+                        <form onSubmit={this.handleSearchSubmit}>
+                          <input class="searchfield" placeholder="Search for a politician, lawmaker, or candidate..." type="text" value={this.state.searchCandidate} onChange={this.handleCandidateSearchChange} />
+                          <input type="submit" value="Search" class="searchbutton"/>
+                        </form>
+                      </ul>
+                      <img src={navbar} class="navbar"/>
+                    </div>
+                  </div>
+                  <img src={homeImg} class="homeImg"/>
+                </div>
+              </Route>
+            <Route path="/candidate" component={Candidate} />
+          </Switch>
         </div>
       </Router>
     );

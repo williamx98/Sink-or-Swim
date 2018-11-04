@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import Grid from '@material-ui/core/Grid';
+import "../App.css"
 const styles = {
     media: {
         padding: '20px',
         backgroundColor: '#f2f2f2',
-        height: '90%'
+        height: '102%',
     },
     life: {
         width: '90%',
@@ -19,7 +20,7 @@ class UserReview extends Component {
                 <Grid container>
                     <Grid item xs>
                         <h1 style={{ color: '#cccccc' }}> VOTERS </h1>
-                        <h1> 61% </h1>
+                        <h1 class="reviewVal"> 61% </h1>
                     </Grid>
                     <Grid item xs>
                         <img style={styles.life} src="X_Mark.svg" />
