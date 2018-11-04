@@ -61,7 +61,7 @@ Grid p {
 .homeImg {
   margin-left: 125px;
   margin-right: 125px;
-  height: 780px;
+  height: 740px;
 }
 
 .App-logo {
@@ -73,7 +73,7 @@ Grid p {
 .App-header {
   height: 100%;
   width: 100%;
-  margin-top: 75px;
+  margin-top: 35px;
   justify-content: center;
   display: flex;
   flex-direction: column;

@@ -21,7 +21,7 @@ class Review extends Component {
                         <h1>Greg Abbott</h1>
                     </Grid>
                     <Grid item xs={4}>
-                        <h2>R-Texas</h2>
+                        <h2 style={{fontSize: "35px"}}>R-Texas</h2>
                     </Grid>
                 </Grid>
 
